@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - [ak gautam jbs]</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+    <nav>
+      <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>हमारे बारे में</h2>
+      <p>हम [ak gautam jbs] IT सपोर्ट और रिपेयर सेवाएँ प्रदान करते हैं। हमारा उद्देश्य ग्राहकों को उच्च गुणवत्ता की सेवाएँ प्रदान करना है।</p>
+    </section>
+
+    <section>
+      <h2>हमारी टीम</h2>
+      <div class="team-member">
+        <img src="team-member1.jpg" alt="Team Member 1" />
+        <h3>अमित कुमार</h3>
+        <p>संस्थापक और मुख्य तकनीकी अधिकारी</p>
+      </div>
+      <div class="team-member">
+        <img src="team-member2.jpg" alt="Team Member 2" />
+        <h3>जितेंद्र सिंह</h3>
+        <p>ग्राहक सहायता प्रमुख</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 [ak gautam jbs]. सभी अधिकार सुरक्षित।</p>
+  </footer>
+</body>
+</html>
