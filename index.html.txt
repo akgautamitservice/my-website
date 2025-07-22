@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>IT Service by [ak gautam jbs]</title>
+    <title>IT Center by [ak gautam jbs]</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,13 +52,13 @@
 </head>
 <body>
     <header>
-        <h1>IT Support & Repair Services</h1>
+        <h1>IT Support & Repair Center</h1>
         <p>By [ak gautam jbs]</p>
     </header>
 
     <main>
         <section>
-            <h2>My  Service,s</h2>
+            <h2>My  Center</h2>
             <ul>
                 <li>Computer And Laptop Repir</li>
                 <li>Internat Connection Problem Solve</li>
