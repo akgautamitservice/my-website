@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+</head>
+<body>
+  <h1>About Page</h1>
+  <p>Yeh humari website ka About page hai.</p>
+  
+  <!-- Home page link -->
+  <a href="index.html">Home Page</a>
+</body>
+</html>
