@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - IT Center by [ak gautam jbs]</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("plain1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      min-height: 100vh;
+    }
+    header {
+      padding: 40px 20px 20px 40px;
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #ccc;
+    }
+    main {
+      max-width: 600px;
+      margin-left: 40px;
+      margin-top: 30px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+    }
+    h2 {
+      color: #ffffff;
+      text-shadow: 1px 1px 4px #000;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+      font-size: 16px;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .contact {
+      margin-top: 30px;
+    }
+    .contact a,
+    .contact p {
+      color: #fff;
+      font-size: 16px;
+      text-shadow: 1px 1px 2px #000;
+    }
+    a.phone-link {
+      color: #00f0ff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a.phone-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #ccc;
+      font-size: 0.9em;
+      margin-top: 40px;
+      text-shadow: 1px 1px 2px #000;
+    }
+  </style>
+  <script>
+    // Check karein agar user logged in nahi hai, toh login page bhejein
+    window.onload = function() {
+      if(localStorage.getItem('loggedIn') !== 'true') {
+        window.location.href = 'login.html';
+      }
+    }
+
+    function logoutUser() {
+      localStorage.removeItem('loggedIn');
+      window.location.href = 'login.html';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to IT Support & Repair Center</h1>
+    <p>By [ak gautam jbs]</p>
+    <button onclick="logoutUser()" style="margin-left:40px; padding:8px 12px; font-weight:bold; cursor:pointer; border-radius:5px; border:none; background:#00f0ff; color:#000;">Logout</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>IT Support</h2>
+      <ul>
+        <li>Computer And Laptop Repair</li>
+        <li>Internet Connection Problem Maintenance</li>
+        <li>Electronic Devices Ki Care And Repair</li>
+        <li>Network Setup And Maintenance</li>
+        <li>Software Installation And Problem Redressal</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>You can call and message on this number:</p>
+      <p><a href="tel:+919759662377" class="phone-link">+91 9759662377</a></p>
+      <p>Email us: <a href="mailto:amitkumar975966@gmail.com" class="phone-link">amitkumar975966@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 [ak gautam jbs]. सभी अधिकार सुरक्षित।
+  </footer>
+</body>
+</html>
