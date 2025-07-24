@@ -1,6 +1,76 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
+  <!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #222;
+      color: #fff;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    form {
+      background: rgba(0,0,0,0.7);
+      padding: 30px;
+      border-radius: 8px;
+      width: 300px;
+    }
+    label, input, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    input, button {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #00f0ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00c8d8;
+    }
+  </style>
+  <script>
+    function loginUser(event) {
+      event.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      // Simple hardcoded login check — aap apne hisaab se badal sakte hain
+      if(email === 'user@example.com' && password === '123456') {
+        localStorage.setItem('loggedIn', 'true');
+        window.location.href = 'index.html';
+      } else {
+        alert('Invalid email or password!');
+      }
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="loginUser(event)">
+    <h2>Login</h2>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required placeholder="Email daalein" />
+    <label for="password">Password:</label>
+    <input type="password" id="password" required placeholder="Password daalein" />
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IT Center by [ak gautam jbs]</title>
